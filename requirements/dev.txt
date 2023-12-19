@@ -4,9 +4,9 @@
 #
 #    pip-compile requirements/dev.in
 #
-absl-py==1.4.0
+absl-py==2.0.0
     # via tensorboard
-aiohttp==3.8.5
+aiohttp==3.9.1
     # via
     #   -c requirements/prod.txt
     #   fsspec
@@ -25,9 +25,9 @@ argon2-cffi==23.1.0
     #   notebook
 argon2-cffi-bindings==21.2.0
     # via argon2-cffi
-arrow==1.2.3
+arrow==1.3.0
     # via isoduration
-asttokens==2.2.1
+asttokens==2.4.1
     # via stack-data
 async-timeout==4.0.3
     # via
@@ -40,42 +40,39 @@ attrs==23.1.0
     #   jsonschema
     #   pytest
     #   referencing
-backcall==0.2.0
-    # via ipython
 beautifulsoup4==4.12.2
     # via nbconvert
-bleach==6.0.0
+bleach==6.1.0
     # via nbconvert
-boltons==23.0.0
+boltons==23.1.1
     # via -r requirements/dev.in
 cachetools==4.2.4
     # via
     #   -c requirements/prod.txt
     #   google-auth
-certifi==2023.7.22
+certifi==2023.11.17
     # via
     #   -c requirements/prod.txt
     #   requests
     #   sentry-sdk
-cffi==1.15.1
+cffi==1.16.0
     # via argon2-cffi-bindings
 cfgv==3.4.0
     # via pre-commit
-charset-normalizer==3.2.0
+charset-normalizer==3.3.2
     # via
     #   -c requirements/prod.txt
-    #   aiohttp
     #   requests
 click==8.1.7
     # via
     #   -c requirements/prod.txt
     #   nltk
     #   wandb
-comm==0.1.4
+comm==0.2.0
     # via
     #   ipykernel
     #   ipywidgets
-contourpy==1.1.0
+contourpy==1.2.0
     # via
     #   -c requirements/prod.txt
     #   matplotlib
@@ -83,11 +80,11 @@ coverage[toml]==6.4
     # via
     #   -r requirements/dev.in
     #   pytest-cov
-cycler==0.11.0
+cycler==0.12.1
     # via
     #   -c requirements/prod.txt
     #   matplotlib
-debugpy==1.6.7.post1
+debugpy==1.8.0
     # via ipykernel
 decorator==5.1.1
     # via ipython
@@ -95,7 +92,7 @@ defusedxml==0.7.1
     # via
     #   -r requirements/dev.in
     #   nbconvert
-distlib==0.3.7
+distlib==0.3.8
     # via virtualenv
 docker-pycreds==0.4.0
     # via wandb
@@ -103,51 +100,52 @@ entrypoints==0.4
     # via
     #   jupyter-client
     #   nbconvert
-exceptiongroup==1.1.3
+exceptiongroup==1.2.0
     # via
     #   -c requirements/prod.txt
     #   anyio
-executing==1.2.0
+    #   ipython
+executing==2.0.1
     # via stack-data
-fastjsonschema==2.18.0
+fastjsonschema==2.19.0
     # via nbformat
-filelock==3.12.2
+filelock==3.13.1
     # via
     #   -c requirements/prod.txt
     #   torch
     #   triton
     #   virtualenv
-fonttools==4.42.1
+fonttools==4.47.0
     # via
     #   -c requirements/prod.txt
     #   matplotlib
 fqdn==1.5.1
     # via jsonschema
-frozenlist==1.4.0
+frozenlist==1.4.1
     # via
     #   -c requirements/prod.txt
     #   aiohttp
     #   aiosignal
-fsspec[http]==2023.6.0
+fsspec[http]==2023.12.2
     # via
     #   -c requirements/prod.txt
     #   pytorch-lightning
     #   torch
-gitdb==4.0.10
+gitdb==4.0.11
     # via gitpython
-gitpython==3.1.32
+gitpython==3.1.40
     # via wandb
-google-auth==2.22.0
+google-auth==2.25.2
     # via
     #   google-auth-oauthlib
     #   tensorboard
-google-auth-oauthlib==1.0.0
+google-auth-oauthlib==1.2.0
     # via tensorboard
-grpcio==1.57.0
+grpcio==1.60.0
     # via tensorboard
-identify==2.5.27
+identify==2.5.33
     # via pre-commit
-idna==3.4
+idna==3.6
     # via
     #   -c requirements/prod.txt
     #   anyio
@@ -156,11 +154,11 @@ idna==3.4
     #   yarl
 iniconfig==2.0.0
     # via pytest
-ipykernel==6.25.1
+ipykernel==6.27.1
     # via
     #   nbclassic
     #   notebook
-ipython==8.14.0
+ipython==8.18.1
     # via
     #   ipykernel
     #   ipywidgets
@@ -168,13 +166,13 @@ ipython-genutils==0.2.0
     # via
     #   nbclassic
     #   notebook
-ipywidgets==8.1.0
+ipywidgets==8.1.1
     # via -r requirements/dev.in
 isoduration==20.11.0
     # via jsonschema
 itermplot==0.331
     # via -r requirements/dev.in
-jedi==0.19.0
+jedi==0.19.1
     # via ipython
 jinja2==3.1.2
     # via
@@ -188,12 +186,12 @@ joblib==1.3.2
     # via nltk
 jsonpointer==2.4
     # via jsonschema
-jsonschema[format-nongpl]==4.19.0
+jsonschema[format-nongpl]==4.20.0
     # via
     #   -c requirements/prod.txt
     #   jupyter-events
     #   nbformat
-jsonschema-specifications==2023.7.1
+jsonschema-specifications==2023.11.2
     # via
     #   -c requirements/prod.txt
     #   jsonschema
@@ -204,7 +202,7 @@ jupyter-client==7.4.9
     #   nbclassic
     #   nbclient
     #   notebook
-jupyter-core==5.3.1
+jupyter-core==5.5.1
     # via
     #   ipykernel
     #   jupyter-client
@@ -214,17 +212,17 @@ jupyter-core==5.3.1
     #   nbconvert
     #   nbformat
     #   notebook
-jupyter-events==0.7.0
+jupyter-events==0.9.0
     # via jupyter-server
-jupyter-server==2.7.2
+jupyter-server==2.12.1
     # via
     #   nbclassic
     #   notebook-shim
-jupyter-server-terminals==0.4.4
+jupyter-server-terminals==0.5.0
     # via jupyter-server
-jupyterlab-pygments==0.2.2
+jupyterlab-pygments==0.3.0
     # via nbconvert
-jupyterlab-widgets==3.0.8
+jupyterlab-widgets==3.0.9
     # via ipywidgets
 kiwisolver==1.4.5
     # via
@@ -232,7 +230,7 @@ kiwisolver==1.4.5
     #   matplotlib
 lxml==4.9.3
     # via nbconvert
-markdown==3.4.4
+markdown==3.5.1
     # via tensorboard
 markupsafe==2.1.3
     # via
@@ -240,7 +238,7 @@ markupsafe==2.1.3
     #   jinja2
     #   nbconvert
     #   werkzeug
-matplotlib==3.7.2
+matplotlib==3.8.2
     # via
     #   -c requirements/prod.txt
     #   -r requirements/dev.in
@@ -263,7 +261,7 @@ multidict==6.0.4
     #   yarl
 nbclassic==1.0.0
     # via notebook
-nbclient==0.8.0
+nbclient==0.9.0
     # via nbconvert
 nbconvert==6.5.4
     # via
@@ -278,13 +276,13 @@ nbformat==5.9.2
     #   nbclient
     #   nbconvert
     #   notebook
-nest-asyncio==1.5.7
+nest-asyncio==1.5.8
     # via
     #   ipykernel
     #   jupyter-client
     #   nbclassic
     #   notebook
-networkx==3.1
+networkx==3.2.1
     # via
     #   -c requirements/prod.txt
     #   torch
@@ -292,11 +290,11 @@ nltk==3.8.1
     # via -r requirements/dev.in
 nodeenv==1.8.0
     # via pre-commit
-notebook==6.5.5
+notebook==6.5.6
     # via -r requirements/dev.in
 notebook-shim==0.2.3
     # via nbclassic
-numpy==1.25.2
+numpy==1.26.2
     # via
     #   -c requirements/prod.txt
     #   contourpy
@@ -364,7 +362,7 @@ oauthlib==3.2.2
     # via requests-oauthlib
 overrides==7.4.0
     # via jupyter-server
-packaging==23.1
+packaging==23.2
     # via
     #   -c requirements/prod.txt
     #   ipykernel
@@ -374,7 +372,7 @@ packaging==23.1
     #   pytest
     #   pytorch-lightning
     #   torchmetrics
-pandas==2.0.3
+pandas==2.1.4
     # via
     #   -c requirements/prod.txt
     #   seaborn
@@ -384,36 +382,34 @@ parso==0.8.3
     # via jedi
 pathtools==0.1.2
     # via wandb
-pexpect==4.8.0
-    # via ipython
-pickleshare==0.7.5
+pexpect==4.9.0
     # via ipython
 pillow==9.4.0
     # via
     #   -c requirements/prod.txt
     #   matplotlib
-platformdirs==3.10.0
+platformdirs==4.1.0
     # via
     #   jupyter-core
     #   virtualenv
-pluggy==1.2.0
+pluggy==1.3.0
     # via pytest
-pre-commit==3.3.3
+pre-commit==3.6.0
     # via -r requirements/dev.in
-prometheus-client==0.17.1
+prometheus-client==0.19.0
     # via
     #   jupyter-server
     #   nbclassic
     #   notebook
 promise==2.3
     # via wandb
-prompt-toolkit==3.0.39
+prompt-toolkit==3.0.43
     # via ipython
 protobuf==3.20.3
     # via
     #   tensorboard
     #   wandb
-psutil==5.9.5
+psutil==5.9.7
     # via
     #   ipykernel
     #   wandb
@@ -425,7 +421,7 @@ pure-eval==0.2.2
     # via stack-data
 py==1.11.0
     # via pytest
-pyasn1==0.5.0
+pyasn1==0.5.1
     # via
     #   pyasn1-modules
     #   rsa
@@ -437,11 +433,11 @@ pydeprecate==0.3.2
     # via
     #   pytorch-lightning
     #   torchmetrics
-pygments==2.16.1
+pygments==2.17.2
     # via
     #   ipython
     #   nbconvert
-pyparsing==3.0.9
+pyparsing==3.1.1
     # via
     #   -c requirements/prod.txt
     #   matplotlib
@@ -454,6 +450,7 @@ pytest-cov==3.0.0
 python-dateutil==2.8.2
     # via
     #   -c requirements/prod.txt
+    #   arrow
     #   jupyter-client
     #   matplotlib
     #   pandas
@@ -462,7 +459,7 @@ python-json-logger==2.0.7
     # via jupyter-events
 pytorch-lightning==1.6.3
     # via -r requirements/dev.in
-pytz==2023.3
+pytz==2023.3.post1
     # via
     #   -c requirements/prod.txt
     #   pandas
@@ -480,13 +477,13 @@ pyzmq==24.0.1
     #   jupyter-server
     #   nbclassic
     #   notebook
-referencing==0.30.2
+referencing==0.32.0
     # via
     #   -c requirements/prod.txt
     #   jsonschema
     #   jsonschema-specifications
     #   jupyter-events
-regex==2023.8.8
+regex==2023.10.3
     # via
     #   -c requirements/prod.txt
     #   nltk
@@ -507,14 +504,14 @@ rfc3986-validator==0.1.1
     # via
     #   jsonschema
     #   jupyter-events
-rpds-py==0.9.2
+rpds-py==0.15.2
     # via
     #   -c requirements/prod.txt
     #   jsonschema
     #   referencing
 rsa==4.9
     # via google-auth
-scipy==1.11.2
+scipy==1.11.4
     # via -r requirements/dev.in
 seaborn==0.12.2
     # via -r requirements/dev.in
@@ -523,9 +520,9 @@ send2trash==1.8.2
     #   jupyter-server
     #   nbclassic
     #   notebook
-sentry-sdk==1.29.2
+sentry-sdk==1.39.1
     # via wandb
-setproctitle==1.3.2
+setproctitle==1.3.3
     # via wandb
 shortuuid==1.0.11
     # via wandb
@@ -535,31 +532,31 @@ six==1.16.0
     #   asttokens
     #   bleach
     #   docker-pycreds
-    #   google-auth
     #   itermplot
     #   promise
     #   python-dateutil
     #   rfc3339-validator
+    #   tensorboard
     #   wandb
-smmap==5.0.0
+smmap==5.0.1
     # via gitdb
 sniffio==1.3.0
     # via
     #   -c requirements/prod.txt
     #   anyio
-soupsieve==2.4.1
+soupsieve==2.5
     # via beautifulsoup4
-stack-data==0.6.2
+stack-data==0.6.3
     # via ipython
 sympy==1.12
     # via
     #   -c requirements/prod.txt
     #   torch
-tensorboard==2.14.0
+tensorboard==2.15.1
     # via pytorch-lightning
-tensorboard-data-server==0.7.1
+tensorboard-data-server==0.7.2
     # via tensorboard
-terminado==0.17.1
+terminado==0.18.0
     # via
     #   jupyter-server
     #   jupyter-server-terminals
@@ -573,7 +570,7 @@ tomli==2.0.1
     # via
     #   coverage
     #   pytest
-torch==2.1.1
+torch==2.1.2
     # via
     #   -c requirements/prod.txt
     #   pytorch-lightning
@@ -596,7 +593,7 @@ tqdm==4.66.1
     #   -c requirements/prod.txt
     #   nltk
     #   pytorch-lightning
-traitlets==5.9.0
+traitlets==5.14.0
     # via
     #   comm
     #   ipykernel
@@ -616,7 +613,9 @@ triton==2.1.0
     # via
     #   -c requirements/prod.txt
     #   torch
-typing-extensions==4.7.1
+types-python-dateutil==2.8.19.14
+    # via arrow
+typing-extensions==4.9.0
     # via
     #   -c requirements/prod.txt
     #   pytorch-lightning
@@ -627,17 +626,16 @@ tzdata==2023.3
     #   pandas
 uri-template==1.3.0
     # via jsonschema
-urllib3==1.26.16
+urllib3==2.0.7
     # via
     #   -c requirements/prod.txt
-    #   google-auth
     #   requests
     #   sentry-sdk
-virtualenv==20.24.3
+virtualenv==20.25.0
     # via pre-commit
 wandb==0.12.17
     # via -r requirements/dev.in
-wcwidth==0.2.6
+wcwidth==0.2.12
     # via prompt-toolkit
 webcolors==1.13
     # via jsonschema
@@ -645,15 +643,13 @@ webencodings==0.5.1
     # via
     #   bleach
     #   tinycss2
-websocket-client==1.6.2
+websocket-client==1.7.0
     # via jupyter-server
-werkzeug==2.3.7
+werkzeug==3.0.1
     # via tensorboard
-wheel==0.41.2
-    # via tensorboard
-widgetsnbextension==4.0.8
+widgetsnbextension==4.0.9
     # via ipywidgets
-yarl==1.9.2
+yarl==1.9.4
     # via
     #   -c requirements/prod.txt
     #   aiohttp
